@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Spectral', sans-serif;
+    font-size: medium;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    padding: 0 5%;
+    background: linear-gradient(rgb(0, 255, 170), rgb(0, 119, 255), rgb(0, 158, 254), rgb(0, 255, 85));
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #1ce00a;
+    left: 80%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #1ce00a;
+    left: 80%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+.container{
+    width: 25rem;
+    color: #fff;
+    background: rgba(0,0,0,0.44);
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-shadow: 5px 10px 35px 2px rgb(4, 0, 255);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1.5px solid rgb(0, 183, 255);
+    margin-bottom: 3%;
+    margin-left: 4%;
+}
+
+.container{
+    font-size: 2rem;
+    font-family: 'Ruby Maze', sans-serif;
+    color: rgb(0, 255, 200);
+}
+
+.container form{
+    margin: 30px 0 10px 0;
+}
+
+.container form p{
+    font-size: 1rem;
+    margin-bottom: 7px;
+    color: aqua;
+}
+
+.container form input{
+    height: 35px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 0 10px;
+    background: transparent;
+    color: rgb(0, 195, 255);
+    border: 2.5px solid rgb(7, 174, 240);
+    transition: all 0.4s ease-out;
+}
+
+.container form input:hover{
+    border: 1px solid rgb(4, 0, 255);
+}
+
+.container form input:focus{
+    padding: 0 14px;
+    border: 1px solid rgb(0, 158, 255);
+    transition: all 0.4 ease-in;
+}
+
+.container form .convert-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container form .from, .container form .to{
+    width: 100%;
+}
+
+.currency{
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.container .convert-box .select-input{
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(0, 183, 255);
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.container .convert-box .select-input:hover{
+    border: 1px solid rgb(4, 0, 255);
+}
+
+.container .convert-box .select-input img{
+    max-width: 20px;
+}
+
+.container .convert-box .select-input select{
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    margin: 0 -5px 0.5px;
+    color: rgb(0, 255, 221);
+}
+
+.container .convert-box .select-input select option{
+    color: rgb(255, 0, 0);
+}
+
+.container .convert-box .reverse{
+    cursor: pointer;
+    margin-top: 32px;
+    font-size: 22px;
+    transform: rotate(90deg);
+    transition: all 0.4s ease;
+}
+
+.container form .result{
+    font-size: 1.1rem;
+    margin: 20px 0 30px;
+    color: rgb(0, 255, 234);
+}
+
+.result{
+    font-family: 'Sedgwick Ave', sans-serif;
+}
+.container form button{
+    width: 100%;
+    height: 42px;
+    color: #0011ff;
+    background: transparent;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Sedgwick Ave', sans-serif;
+    font-size: 1.25rem;
+    transition: all 0.4 ease-in;
+    border: 2px solid rgb(0, 140, 255);
+}
+
+.container form button:hover{
+    color: rgb(0, 255, 234);
+    background-color: rgb(0, 4, 255);
+}
